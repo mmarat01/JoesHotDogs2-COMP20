@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe's Hotdogs 2 - COMP20</title>
+    <meta name="author" content="Mijael Maratuech Seminario" />
+    <meta name="description" content="COMP20, homework 7: Joe's Hotdogs 2" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" type="image/png" href="assets/hotdog.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="scripts/index.js"></script>
+  </head>
+  <body>
+    <main class="content">
+      <h1 id="title">Your Joe's Hot Dogs order:</h1>
+      <form id="order-form">
+        <ul>
+          <li>
+            <label for="hotdogs-num">Hot dogs ($3.25/ea)</label>
+            <input list="hotdog-portions" id="hotdogs-num" min="0" required />
+            <datalist id="hotdog-portions">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="10"></option>
+              <option value="15"></option>
+              <option value="20"></option>
+            </datalist>
+          </li>
+          <li>
+            <label for="frenchfries-num">French fries ($2.0/ea)</label>
+            <input
+              list="fries-portions"
+              id="frenchfries-num"
+              min="0"
+              required
+            />
+            <datalist id="fries-portions">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="10"></option>
+              <option value="15"></option>
+              <option value="20"></option>
+            </datalist>
+          </li>
+          <li>
+            <label for="sodas-num">Sodas ($1.5/ea)</label>
+            <input list="soda-portions" id="sodas-num" min="0" required />
+            <datalist id="soda-portions">
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="10"></option>
+              <option value="15"></option>
+              <option value="20"></option>
+            </datalist>
+          </li>
+          <li>
+            <input type="submit" id="submit" />
+          </li>
+        </ul>
+      </form>
+    </main>
+  </body>
+</html>

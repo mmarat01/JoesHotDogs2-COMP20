@@ -1,0 +1,55 @@
+/* mini styling reset */
+* {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #dddddd;
+  min-width: 0;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+.content{
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2rem 4rem 2rem 4rem;
+}
+
+@media screen and (max-width: 455px) {
+  .content {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+#title{
+  padding-left: 1rem;
+  font-weight: 700;
+  font-size: 2em;
+  margin-bottom: 1.25rem;
+  line-height: 1.2;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li {
+  margin: 1rem;
+}
+
+ul li label{
+  font-weight: 500;
+}
+
+#submit {
+  padding: .35rem;
+}
