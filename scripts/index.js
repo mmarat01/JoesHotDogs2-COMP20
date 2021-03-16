@@ -30,7 +30,7 @@ const buildOrderSummary = (
   total
 ) => {
   return ` You ordered:\n  - ${hotDogs} hot dog(s)\n  - ${frenchFries} french fries\n \
-  - ${sodas} soda(s)\n\n  Subtotal: $${subtotal}\n  Discount: $${discount}\n\
+ - ${sodas} soda(s)\n\n  Subtotal: $${subtotal}\n  Discount: $${discount}\n\
   Tax: $${tax}\n\n  TOTAL: $${total}`;
 };
 
