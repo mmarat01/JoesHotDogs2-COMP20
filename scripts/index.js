@@ -31,7 +31,7 @@ const buildOrderSummary = (
 ) => {
   return ` You ordered:\n  - ${hotDogs} hot dog(s)\n  - ${frenchFries} french fries\n \
   - ${sodas} soda(s)\n\n  Subtotal: $${subtotal}\n  Discount: $${discount}\n\
-  Tax: $${tax}\n  TOTAL: $${total}`;
+  Tax: $${tax}\n\n  TOTAL: $${total}`;
 };
 
 document.querySelector("#order-form").addEventListener("submit", (e) => {
@@ -46,6 +46,7 @@ document.querySelector("#order-form").addEventListener("submit", (e) => {
   let tax = computeTax(subtotal, discount);
   let total = computeTotal(subtotal, discount, tax);
 
+  // summarize order and report
   let orderSummary = buildOrderSummary(
     hotDogs,
     frenchFries,
